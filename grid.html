@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh Display Grid</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr; /* Tiga kolom dengan lebar proporsional */
+        grid-gap: 10px; /* Jarak antara elemen-elemen grid */
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+      .item {
+        background-color: #ffcc00;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </div>
+  </body>
+</html>
