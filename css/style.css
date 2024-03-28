@@ -173,8 +173,22 @@ body {
   max-width: 80%;
 }
 
-.menu .row .menu-card .menu-card-title {
+.menu .row .menu-card .menu-card-title,
+.menu .row .menu-card .price {
   margin: 1rem auto 0.5rem;
+}
+
+.menu .row .menu-card .button {
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  margin-top: 1.3rem;
+}
+.menu .row .menu-card .button:hover {
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
 /* Store / Contact Section */
@@ -248,6 +262,12 @@ body {
   padding: 1rem 3rem;
   background-color: var(--primary);
 }
+
+.contact .marketplace .icon a:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
 .contact .marketplace .icon a img {
   width: 3rem;
   height: 3rem;
