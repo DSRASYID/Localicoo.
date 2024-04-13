@@ -4,6 +4,8 @@
   --text: white;
   --textlight: #55504b;
   --bg: #ffffff;
+  --shopee: #ee4d2d;
+  --gradient: (#ee4d2d, #ff7337);
 }
 
 * {
@@ -89,15 +91,6 @@ body {
   align-content: center;
 }
 
-/* .hero::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(0deg, #ffffff 3%, #ffffff00 10%);
-} */
-
 .hero .content {
   display: block;
   /* display: grid; 
@@ -168,13 +161,11 @@ body {
   padding-bottom: 4rem;
 }
 .menu .row .menu-card img {
-  /* border-radius: 0%; */
-  /* border: solid 1px var(--primary); */
   max-width: 80%;
 }
 
 .menu .row .menu-card .menu-card-title,
-.menu .row .menu-card .price {
+.menu .row .menu-card .menu-card-price {
   margin: 1rem auto 0.5rem;
 }
 
@@ -189,6 +180,136 @@ body {
 .menu .row .menu-card .button:hover {
   background-color: var(--primary);
   color: var(--secondary);
+}
+
+/* KATALOG PAGE */
+
+/* Hero section */
+.hero-catalog {
+  min-height: 35vh;
+  display: flex;
+  background-image: url(img/local-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-content: center;
+}
+
+.hero-catalog .content-catalog {
+  display: block;
+  /* display: grid; 
+  grid-template-columns: 2fr 1fr; */
+  padding: 1rem 7%;
+  max-width: 100%;
+  align-content: center;
+  justify-content: center;
+}
+
+.hero-catalog .content-catalog h1 {
+  font-size: 4em;
+  color: var(--text);
+  line-height: 1.2;
+  align-content: center;
+  margin-top: 1rem;
+}
+
+.hero-catalog .content-catalog p {
+  color: var(--text);
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  line-height: 1.4;
+  font-weight: 100;
+  align-content: center;
+  mix-blend-mode: normal;
+}
+
+/* Menu Catalog */
+
+.menu-catalog h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+  margin-top: 5rem;
+  font-family: "Satisfy", cursive;
+}
+
+.menu-catalog p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+.menu-catalog .row-catalog {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  justify-content: center;
+}
+.menu-catalog .row-catalog .menu-card-catalog {
+  text-align: center;
+  padding-bottom: 4rem;
+  border: 1.3px solid var(--secondary);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin: 0.5rem;
+  background-color: var(--primary);
+}
+.menu-catalog .row-catalog .menu-card-catalog img {
+  max-width: 100%;
+}
+
+.menu-catalog .row-catalog .menu-card-catalog .menu-card-title-catalog {
+  margin-top: 3rem;
+}
+
+.menu-catalog .row-catalog .menu-card-catalog .location {
+  font-size: small;
+}
+
+.menu-catalog .row-catalog .menu-card-catalog .menu-card-price-catalog {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.menu-catalog
+  .row-catalog
+  .menu-card-catalog
+  .menu-card-price-catalog
+  .normalprice {
+  text-decoration: line-through red;
+}
+
+.menu-catalog
+  .row-catalog
+  .menu-card-catalog
+  .menu-card-price-catalog
+  .discount {
+  color: var(--shopee);
+  font-weight: bold;
+  font-size: 1.3rem;
+  /* background-color: var(--secondary);
+  margin-left: 0.5rem;
+  padding: 0.3rem 1rem;
+  border-radius: 50px; */
+}
+
+.menu-catalog .row-catalog .menu-card-catalog .menu-card-price-catalog .rupiah {
+  font-size: small;
+}
+
+.menu-catalog .row-catalog .menu-card-catalog .button {
+  background-color: var(--shopee);
+  color: var(--text);
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
+.menu-catalog .row-catalog .menu-card-catalog .button:hover {
+  background-color: #ffa620;
+  color: var(--text);
 }
 
 /* Store / Contact Section */
